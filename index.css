@@ -1,0 +1,158 @@
+html,
+body,
+nav,
+div,
+label,
+footer,
+button,
+header,
+fieldset {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    border: none;
+}
+
+header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 1%;
+}
+
+nav input[type=radio] {
+    display: none;
+}
+
+nav label {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+nav div {
+    display: block;
+    width: 92%;
+    height: 100%;
+    text-align: center;
+    background-color: brown;
+}
+
+nav input[type=radio]:checked+label {
+    background-color: #3A55BB;
+}
+
+.TCR_radio_btn {
+    border-bottom-left-radius: 20px;
+}
+
+.perecent_radio_btn {
+    border-bottom-right-radius: 20px;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 7%;
+}
+
+footer button {
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+button:active {
+    background-color: #3A55BB;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+}
+
+form {}
+
+form input {
+    appearance: textfield;
+    font-size: 2.5rem;
+    background-color: brown;
+    border: 2 #1f1f1f solid;
+    width: 90%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+fieldset {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    color: brown;
+    width: 95%;
+    height: 20vw;
+    border: brown 2px solid;
+    text-align: center;
+}
+
+fieldset input[type=radio] {
+    display: none;
+}
+
+fieldset input[type=radio]:checked+label {
+    background-color: #3A55BB;
+    color: #000;
+}
+
+fieldset label {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+fieldset div {
+    display: block;
+    width: 20%;
+    height: 100%;
+    border: brown 1px solid;
+    border-radius: 5px;
+}
+
+#T3:checked+#number_2 {
+    display: inline-block;
+}
