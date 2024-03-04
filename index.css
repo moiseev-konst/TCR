@@ -6,7 +6,9 @@ label,
 footer,
 button,
 header,
-fieldset {
+fieldset,
+input,
+legend {
     margin: 0px;
     padding: 0px;
     border: none;
@@ -14,13 +16,16 @@ fieldset {
 
 #root {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #1f1f1f;
     border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 
 header {
@@ -98,18 +103,31 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80%;
+    height: 40%;
     align-items: center;
 }
 
-form {}
-
 form input {
     appearance: textfield;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
+    font-weight: 900;
+    width: 50%;
+    border: #1f1f1f 2px solid;
+    outline: none;
     background-color: brown;
-    border: 2 #1f1f1f solid;
-    width: 90%;
+}
+
+form input[type=number]::placeholder {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+form input[type=number]:focus {
+    height: 10vh;
+    background-color: #3A55BB
 }
 
 input::-webkit-outer-spin-button,
@@ -121,11 +139,12 @@ input::-webkit-inner-spin-button {
 fieldset {
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    font-size: 2.5rem;
+    align-items: center;
     color: brown;
     width: 95%;
-    height: 20vw;
+    height: 90%;
     border: brown 2px solid;
     text-align: center;
 }
@@ -137,22 +156,28 @@ fieldset input[type=radio] {
 fieldset input[type=radio]:checked+label {
     background-color: #3A55BB;
     color: #000;
+    border: none;
 }
 
 fieldset label {
+    text-align: center;
     display: block;
     width: 100%;
-    height: 100%;
+    border: brown 1px solid;
+    border-radius: 10%;
 }
 
 fieldset div {
     display: block;
-    width: 20%;
-    height: 100%;
-    border: brown 1px solid;
+    width: 30%;
     border-radius: 5px;
 }
 
-#T3:checked+#number_2 {
-    display: inline-block;
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    color: brown;
+    font-size: 4rem;
 }

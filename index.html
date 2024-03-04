@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+
     <title>Document</title>
 </head>
 
@@ -12,40 +13,41 @@
     <header>
         <nav>
             <div class="TCR_radio_btn">
-                <input id="radio_1" type="radio" name="radio" />
-                <label for="radio_1">TCR</label>
+                <input id="TCR_radio_btn" type="radio" name="radio" checked="true" />
+                <label for="TCR_radio_btn">TCR</label>
             </div>
             <div class="perecent_radio_btn">
-                <input id="radio_2" type="radio" name="radio" />
-                <label for="radio_2">%</label>
+                <input id="perecent_radio_btn" type="radio" name="radio" />
+                <label for="perecent_radio_btn">%</label>
             </div>
         </nav>
     </header>
     <form class="form">
-        <div class="number_1">
-            <input id="number_1" type="number" name="radio" />
-            <label for="number_1"></label>
-        </div>
-        <div class="number_2">
-            <input id="number_2" type="number" name="radio" />
-            <label for="number_2"></label>
-        </div>
+
+        <input id="number_1" type="number" placeholder="Ri" />
+
+
+        <input id="number_2" type="number" placeholder="Rf" />
+
 
         <fieldset>
-            <legend>Tемпература</legend>
-            <div class="T1">
-                <input id="T1" type="radio" name="temp" />
-                <label for="T1">-60</label>
+            <legend>Temperature</legend>
+            <div class="t1">
+                <input id="t1" type="radio" name="temperature" checked="true" value="-60" />
+                <label for="t1">-60</label>
             </div>
-            <div class="T2">
-                <input id="T2" type="radio" name="temp" />
-                <label for="T2">155</label>
+            <div class="t2">
+                <input id="t2" type="radio" name="temperature" value="155" />
+                <label for="t2">155</label>
             </div>
 
         </fieldset>
     </form>
-
-    <footer><button>Сalculation</button></footer>
+    <div class="result">
+        <div id="result"></div>
+    </div>
+    <footer><button id="btn_Сalculation">Сalculation</button></footer>
 </body>
+<script src="/index.js" type="text/javascript"></script>
 
 </html>
