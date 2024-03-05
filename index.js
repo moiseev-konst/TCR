@@ -28,7 +28,7 @@ const calculation = (e) => {
     console.log(result.innerHTML = str.toString())
 }
 const tcrCalculation = () => {
-    return r1 && r2 ? (((r2 - r1) / (r1 * (20 - t))) * 10 ** 6).toFixed(2) : 'error'
+    return r1 && r2 ? (((r2 - r1) / (r1 * (25- t))) * 10 ** 6).toFixed(2) : 'error'
 }
 const perecentCalculation = () => {
 
