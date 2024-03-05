@@ -44,8 +44,8 @@ perecent_radio_btn.addEventListener("change", () => {
     fieldset_T.style.visibility = 'hidden'
     console.log(TCR_radio_btn.checked)
 })
-numb1.addEventListener("change", (e) => { r1 = Number(e.target.value) })
-numb2.addEventListener("change", (e) => { r2 = Number(e.target.value) })
+numb1.addEventListener("change", (e) => { r1 = Number.parseFloat(e.target.value) })
+numb2.addEventListener("change", (e) => { r2 = Number.parseFloat()(e.target.value) })
 t1.addEventListener("change", (e) => { t = Number(e.target.value) })
 t2.addEventListener("change", (e) => { t = Number(e.target.value) })
 btn_Сalculation.addEventListener('click', calculation)
